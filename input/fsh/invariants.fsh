@@ -82,3 +82,8 @@ Invariant: ilhdp-enc-one-active-nursing-unit
 Description: "No more than one active nursing-unit location entry is allowed at a time."
 Severity: #error
 Expression: "location.where(physicalType.coding.where(system='http://fhir.health.gov.il/cs/il-core-location-physical-type' and code='hospital-nursing-unit').exists() and status = 'active').count() <= 1"
+
+Invariant: il-id-or-ppn
+Description: "The identifier SHOULD contain at least one of the following slices: il-id or ppn"
+Severity: #warning
+Expression: "identifier.where(system = 'http://fhir.health.gov.il/identifier/il-national-id').exists() or identifier.where(system.startsWith('http://hl7.org/fhir/sid/passport')).exists()"
