@@ -16,8 +16,8 @@ Usage: #example
 
 * status = #active
 * name = "Hospital1 Ward B Nursing Unit 1"
-* type[nursing-unit] = $il-core-location-physical-type#hospital-nursing-unit "Hospital nursing unit"
-* type[hospital-unit] = $v3-RoleCode#HU "Hospital Unit"
+* type.coding[nursing-unit] = $il-core-location-physical-type#hospital-nursing-unit "Hospital nursing unit"
+* type.coding[hospital-unit] = $v3-RoleCode#HU "Hospital unit"
 * mode = #instance
 * managingOrganization.reference = "Organization/hospital1-ward-b"
 * address.line[+] = "Rambam Hospital, Haifa"
