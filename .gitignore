@@ -16,3 +16,4 @@ input-cache
 template
 output
 validator_cli.jar
+.claude/settings.local.json
