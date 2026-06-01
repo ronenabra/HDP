@@ -6,7 +6,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>AllergyIntolerance.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>AllergyIntolerance.meta.security[0]</td><td>Not Found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/cs/il-hdp-information-buckets' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>AllergyIntolerance.code</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'IL Core Allergy Intolerance Code' (http://fhir.health.gov.il/ValueSet/il-core-allergy-intolerance-code|0.20.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#292044008)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>AllergyIntolerance</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-allergy-intolerance)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>AllergyIntolerance.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>AllergyIntolerance.meta.security[0]</td><td>Not Found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/cs/il-hdp-information-buckets' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>AllergyIntolerance.code</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'IL Core Allergy Intolerance Code' (http://fhir.health.gov.il/ValueSet/il-core-allergy-intolerance-code|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#292044008)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>AllergyIntolerance</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-allergy-intolerance)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -80,7 +80,7 @@
         "severity" : "warning",
         "code" : "code-invalid",
         "details" : {
-          "text" : "None of the codings provided are in the value set 'IL Core Allergy Intolerance Code' (http://fhir.health.gov.il/ValueSet/il-core-allergy-intolerance-code|0.20.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#292044008)"
+          "text" : "None of the codings provided are in the value set 'IL Core Allergy Intolerance Code' (http://fhir.health.gov.il/ValueSet/il-core-allergy-intolerance-code|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#292044008)"
         },
         "expression" : ["AllergyIntolerance.code"]
       },
@@ -200,7 +200,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>CareTeam.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>CareTeam.contained[0]/*Practitioner/pr1*/.name[0].extension[0].value.ofType(code)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>CareTeam.contained[0]/*Practitioner/pr1*/.name[0].extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.20.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>CareTeam</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>CareTeam.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>CareTeam.contained[0]/*Practitioner/pr1*/.name[0].extension[0].value.ofType(code)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>CareTeam.contained[0]/*Practitioner/pr1*/.name[0].extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.21.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>CareTeam</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -274,7 +274,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.20.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.21.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["CareTeam.contained[0]/*Practitioner/pr1*/.name[0].extension[0]"]
       },
@@ -869,7 +869,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>DocumentReference.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>DocumentReference.type</td><td>Not Found</td><td>A definition for CodeSystem 'http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>DocumentReference.type</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'Document Type Value Set' (http://hl7.org/fhir/ValueSet/c80-doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types#pathology-report)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>DocumentReference.type.coding[0]</td><td>Not Found</td><td>A definition for CodeSystem 'http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>DocumentReference.type</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'ILHDP Document Reference Types' (http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types|0.4.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types#pathology-report)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>DocumentReference</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-document-reference)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>DocumentReference.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>DocumentReference.type</td><td>Not Found</td><td>A definition for CodeSystem 'http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>DocumentReference.type</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'Document Type Value Set' (http://hl7.org/fhir/ValueSet/c80-doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types#pathology-report)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>DocumentReference.type.coding[0]</td><td>Not Found</td><td>A definition for CodeSystem 'http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>DocumentReference.type</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'ILHDP Document Reference Types' (http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types|0.5.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types#pathology-report)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>DocumentReference</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-document-reference)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -987,7 +987,7 @@
         "severity" : "warning",
         "code" : "code-invalid",
         "details" : {
-          "text" : "None of the codings provided are in the value set 'ILHDP Document Reference Types' (http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types|0.4.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types#pathology-report)"
+          "text" : "None of the codings provided are in the value set 'ILHDP Document Reference Types' (http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types|0.5.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://hdp.fhir.health.gov.il/ValueSet/il-hdp-document-types#pathology-report)"
         },
         "expression" : ["DocumentReference.type"]
       },
@@ -1022,7 +1022,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Encounter.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Encounter.class</td><td>Not Found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/cs/il-core-encounter-class' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Encounter.class</td><td>Invalid Code</td><td>The code provided (http://fhir.health.gov.il/cs/il-core-encounter-class#COMMUNITY-OR-HMO) is not in the value set 'ActEncounterCode' (http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0), and a code should come from this value set unless it has no suitable code (the validator cannot judge what is suitable)</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.diagnosis[0].use</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'DiagnosisRole' (http://hl7.org/fhir/ValueSet/diagnosis-role|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-diagnosis-role#primary-diagnosis)</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.reasonCode[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.reasonReference[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.reasonReference[1]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.diagnosis[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.location[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Encounter.type[1]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.20.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.reasonCode[0]</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/encounter-reason|4.0.1</td><td/><td>TerminologyEngine</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Encounter.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Encounter.class</td><td>Not Found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/cs/il-core-encounter-class' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Encounter.class</td><td>Invalid Code</td><td>The code provided (http://fhir.health.gov.il/cs/il-core-encounter-class#COMMUNITY-OR-HMO) is not in the value set 'ActEncounterCode' (http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0), and a code should come from this value set unless it has no suitable code (the validator cannot judge what is suitable)</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.diagnosis[0].use</td><td>Business Rule Violation</td><td>Reference to retired CodeSystem http://fhir.health.gov.il/cs/il-core-diagnosis-role|0.21.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Encounter.diagnosis[0].use.coding[0]</td><td>Business Rule Violation</td><td>The concept 'primary-diagnosis' is deprecated and its use should be reviewed</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.diagnosis[0].use</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'DiagnosisRole' (http://hl7.org/fhir/ValueSet/diagnosis-role|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-diagnosis-role#primary-diagnosis)</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.reasonCode[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.reasonReference[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.reasonReference[1]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.diagnosis[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.location[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Encounter.type[1]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.reasonCode[0]</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/encounter-reason|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Encounter.diagnosis[0].use</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'IL Core Diagnosis Role' (http://fhir.health.gov.il/ValueSet/il-core-diagnosis-role|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/il-core-diagnosis-role#primary-diagnosis)</td><td/><td>TerminologyEngine</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -1115,6 +1115,54 @@
         },
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "MSG_RETIRED"
+        }],
+        "severity" : "information",
+        "code" : "business-rule",
+        "details" : {
+          "text" : "Reference to retired CodeSystem http://fhir.health.gov.il/cs/il-core-diagnosis-role|0.21.0"
+        },
+        "expression" : ["Encounter.diagnosis[0].use"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 116
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "DEPRECATED_CONCEPT_FOUND"
+        }],
+        "severity" : "warning",
+        "code" : "business-rule",
+        "details" : {
+          "text" : "The concept 'primary-diagnosis' is deprecated and its use should be reviewed"
+        },
+        "expression" : ["Encounter.diagnosis[0].use.coding[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 116
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
           "valueCode" : "Terminology_TX_NoValid_3_CC"
         }],
         "severity" : "information",
@@ -1144,7 +1192,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.reasonCode[0]"]
       },
@@ -1168,7 +1216,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.reasonReference[0]"]
       },
@@ -1192,7 +1240,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.reasonReference[1]"]
       },
@@ -1216,7 +1264,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.diagnosis[0]"]
       },
@@ -1240,7 +1288,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-community-hmo-ambulatory|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.location[0]"]
       },
@@ -1264,7 +1312,7 @@
         "severity" : "warning",
         "code" : "code-invalid",
         "details" : {
-          "text" : "None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.20.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)"
+          "text" : "None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)"
         },
         "expression" : ["Encounter.type[1]"]
       },
@@ -1291,6 +1339,30 @@
           "text" : "Reference to draft ValueSet http://hl7.org/fhir/ValueSet/encounter-reason|4.0.1"
         },
         "expression" : ["Encounter.reasonCode[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 116
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_2_CC"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'IL Core Diagnosis Role' (http://fhir.health.gov.il/ValueSet/il-core-diagnosis-role|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/il-core-diagnosis-role#primary-diagnosis)"
+        },
+        "expression" : ["Encounter.diagnosis[0].use"]
       }]
     }
   },
@@ -1299,7 +1371,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Encounter.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Encounter.reasonCode[0]</td><td>Not Found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/cs/patient-visit-reason-moh' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.reasonCode[0]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'Encounter Reason Codes' (http://hl7.org/fhir/ValueSet/encounter-reason|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/patient-visit-reason-moh#10)</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.diagnosis[1].use</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'DiagnosisRole' (http://hl7.org/fhir/ValueSet/diagnosis-role|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-diagnosis-role#primary-diagnosis)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Encounter.hospitalization.dischargeDisposition</td><td>Not Found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/cs/patient-release-type-moh' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.participant[1]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.participant[3]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.participant[5]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.reasonReference[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.reasonReference[1]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.diagnosis[1]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.location[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Encounter.type[1]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.20.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.reasonCode[0]</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/encounter-reason|4.0.1</td><td/><td>TerminologyEngine</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Encounter.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Encounter.reasonCode[0]</td><td>Not Found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/cs/patient-visit-reason-moh' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.reasonCode[0]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'Encounter Reason Codes' (http://hl7.org/fhir/ValueSet/encounter-reason|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/patient-visit-reason-moh#10)</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.diagnosis[1].use</td><td>Business Rule Violation</td><td>Reference to retired CodeSystem http://fhir.health.gov.il/cs/il-core-diagnosis-role|0.21.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Encounter.diagnosis[1].use.coding[0]</td><td>Business Rule Violation</td><td>The concept 'primary-diagnosis' is deprecated and its use should be reviewed</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.diagnosis[1].use</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'DiagnosisRole' (http://hl7.org/fhir/ValueSet/diagnosis-role|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-diagnosis-role#primary-diagnosis)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Encounter.hospitalization.dischargeDisposition</td><td>Not Found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/cs/patient-release-type-moh' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.participant[1]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.participant[3]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.participant[5]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.reasonReference[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.reasonReference[1]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.diagnosis[1]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.location[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Encounter.type[1]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.reasonCode[0]</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/encounter-reason|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Encounter.diagnosis[1].use</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'IL Core Diagnosis Role' (http://fhir.health.gov.il/ValueSet/il-core-diagnosis-role|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/il-core-diagnosis-role#primary-diagnosis)</td><td/><td>TerminologyEngine</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -1392,6 +1464,54 @@
         },
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "MSG_RETIRED"
+        }],
+        "severity" : "information",
+        "code" : "business-rule",
+        "details" : {
+          "text" : "Reference to retired CodeSystem http://fhir.health.gov.il/cs/il-core-diagnosis-role|0.21.0"
+        },
+        "expression" : ["Encounter.diagnosis[1].use"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 266
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "DEPRECATED_CONCEPT_FOUND"
+        }],
+        "severity" : "warning",
+        "code" : "business-rule",
+        "details" : {
+          "text" : "The concept 'primary-diagnosis' is deprecated and its use should be reviewed"
+        },
+        "expression" : ["Encounter.diagnosis[1].use.coding[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 266
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
           "valueCode" : "Terminology_TX_NoValid_3_CC"
         }],
         "severity" : "information",
@@ -1445,7 +1565,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.participant[1]"]
       },
@@ -1469,7 +1589,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.participant[3]"]
       },
@@ -1493,7 +1613,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.participant[5]"]
       },
@@ -1517,7 +1637,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.reasonReference[0]"]
       },
@@ -1541,7 +1661,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.reasonReference[1]"]
       },
@@ -1565,7 +1685,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.diagnosis[1]"]
       },
@@ -1589,7 +1709,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-hospitalization|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.location[0]"]
       },
@@ -1613,7 +1733,7 @@
         "severity" : "warning",
         "code" : "code-invalid",
         "details" : {
-          "text" : "None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.20.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)"
+          "text" : "None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)"
         },
         "expression" : ["Encounter.type[1]"]
       },
@@ -1640,6 +1760,30 @@
           "text" : "Reference to draft ValueSet http://hl7.org/fhir/ValueSet/encounter-reason|4.0.1"
         },
         "expression" : ["Encounter.reasonCode[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 266
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_2_CC"
+        }],
+        "severity" : "warning",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'IL Core Diagnosis Role' (http://fhir.health.gov.il/ValueSet/il-core-diagnosis-role|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/il-core-diagnosis-role#primary-diagnosis)"
+        },
+        "expression" : ["Encounter.diagnosis[1].use"]
       }]
     }
   },
@@ -1648,7 +1792,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Encounter.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.participant[1]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.reasonReference[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Encounter.type[1]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.20.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)</td><td/><td>TerminologyEngine</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Encounter.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.participant[1]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.reasonReference[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Encounter.type[1]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)</td><td/><td>TerminologyEngine</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -1698,7 +1842,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.participant[1]"]
       },
@@ -1722,7 +1866,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.reasonReference[0]"]
       },
@@ -1746,7 +1890,7 @@
         "severity" : "warning",
         "code" : "code-invalid",
         "details" : {
-          "text" : "None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.20.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)"
+          "text" : "None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)"
         },
         "expression" : ["Encounter.type[1]"]
       }]
@@ -1757,7 +1901,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Encounter.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.participant[1]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.reasonCode[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Encounter.type[1]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.20.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.reasonCode[0]</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/encounter-reason|4.0.1</td><td/><td>TerminologyEngine</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Encounter.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.participant[1]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.reasonCode[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Encounter.type[1]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.reasonCode[0]</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/encounter-reason|4.0.1</td><td/><td>TerminologyEngine</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -1807,7 +1951,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.participant[1]"]
       },
@@ -1831,7 +1975,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.reasonCode[0]"]
       },
@@ -1855,7 +1999,7 @@
         "severity" : "warning",
         "code" : "code-invalid",
         "details" : {
-          "text" : "None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.20.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)"
+          "text" : "None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)"
         },
         "expression" : ["Encounter.type[1]"]
       },
@@ -1890,7 +2034,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Encounter.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.participant[1]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.reasonReference[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.location[2]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.location[3]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Encounter.type[1]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.20.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)</td><td/><td>TerminologyEngine</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Encounter.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Encounter.participant[1]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.reasonReference[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.location[2]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Encounter.location[3]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Encounter.type[1]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)</td><td/><td>TerminologyEngine</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -1940,7 +2084,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.participant[1]"]
       },
@@ -1964,7 +2108,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.reasonReference[0]"]
       },
@@ -1988,7 +2132,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.location[2]"]
       },
@@ -2012,7 +2156,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-encounter-inpatient-care-segment|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Encounter.location[3]"]
       },
@@ -2036,7 +2180,7 @@
         "severity" : "warning",
         "code" : "code-invalid",
         "details" : {
-          "text" : "None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.20.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)"
+          "text" : "None of the codings provided are in the value set 'IL Core Encounter Type' (http://fhir.health.gov.il/ValueSet/il-core-encounter-type|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#1258986006)"
         },
         "expression" : ["Encounter.type[1]"]
       }]
@@ -2084,7 +2228,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>EpisodeOfCare.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>EpisodeOfCare.type[1]</td><td>Not Found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/cs/il-core-service-type' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>EpisodeOfCare.type[1]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-episode-of-care-recurring-daily-hospitalization|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>EpisodeOfCare.type[1].coding[0]</td><td>Not Found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/cs/il-core-service-type' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>EpisodeOfCare.type[1]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'IL Core EpisodeOfCare Type and Service Type' (http://fhir.health.gov.il/ValueSet/il-core-episode-of-care-type-and-service-type|0.20.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/il-core-service-type#null)</td><td/><td>TerminologyEngine</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>EpisodeOfCare.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>EpisodeOfCare.type[1]</td><td>Not Found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/cs/il-core-service-type' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>EpisodeOfCare.type[1]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-episode-of-care-recurring-daily-hospitalization|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>EpisodeOfCare.type[1].coding[0]</td><td>Not Found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/cs/il-core-service-type' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>EpisodeOfCare.type[1]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'IL Core EpisodeOfCare Type and Service Type' (http://fhir.health.gov.il/ValueSet/il-core-episode-of-care-type-and-service-type|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/il-core-service-type#null)</td><td/><td>TerminologyEngine</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -2158,7 +2302,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-episode-of-care-recurring-daily-hospitalization|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-episode-of-care-recurring-daily-hospitalization|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["EpisodeOfCare.type[1]"]
       },
@@ -2202,7 +2346,7 @@
         "severity" : "warning",
         "code" : "code-invalid",
         "details" : {
-          "text" : "None of the codings provided are in the value set 'IL Core EpisodeOfCare Type and Service Type' (http://fhir.health.gov.il/ValueSet/il-core-episode-of-care-type-and-service-type|0.20.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/il-core-service-type#null)"
+          "text" : "None of the codings provided are in the value set 'IL Core EpisodeOfCare Type and Service Type' (http://fhir.health.gov.il/ValueSet/il-core-episode-of-care-type-and-service-type|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/il-core-service-type#null)"
         },
         "expression" : ["EpisodeOfCare.type[1]"]
       }]
@@ -2359,7 +2503,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Medication.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Medication.code</td><td>Not Found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/ValueSet/il-core-medication-code' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Medication.form</td><td>Not Found</td><td>A definition for CodeSystem 'http://www.snomed.org/sct' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Medication.code</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'ILCore Medication Code' (http://fhir.health.gov.il/ValueSet/il-core-medication-code|0.20.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/ValueSet/il-core-medication-code#123456)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Medication.form.coding[0]</td><td>Not Found</td><td>A definition for CodeSystem 'http://www.snomed.org/sct' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Medication.form</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'SNOMED CT Form Codes' (http://hl7.org/fhir/ValueSet/medication-form-codes|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://www.snomed.org/sct#420692007)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Medication</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Medication.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Medication.code</td><td>Not Found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/ValueSet/il-core-medication-code' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Medication.form</td><td>Not Found</td><td>A definition for CodeSystem 'http://www.snomed.org/sct' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Medication.code</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'ILCore Medication Code' (http://fhir.health.gov.il/ValueSet/il-core-medication-code|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/ValueSet/il-core-medication-code#123456)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Medication.form.coding[0]</td><td>Not Found</td><td>A definition for CodeSystem 'http://www.snomed.org/sct' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Medication.form</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'SNOMED CT Form Codes' (http://hl7.org/fhir/ValueSet/medication-form-codes|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://www.snomed.org/sct#420692007)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Medication</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -2457,7 +2601,7 @@
         "severity" : "warning",
         "code" : "code-invalid",
         "details" : {
-          "text" : "None of the codings provided are in the value set 'ILCore Medication Code' (http://fhir.health.gov.il/ValueSet/il-core-medication-code|0.20.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/ValueSet/il-core-medication-code#123456)"
+          "text" : "None of the codings provided are in the value set 'ILCore Medication Code' (http://fhir.health.gov.il/ValueSet/il-core-medication-code|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/ValueSet/il-core-medication-code#123456)"
         },
         "expression" : ["Medication.code"]
       },
@@ -2536,7 +2680,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>MedicationDispense.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>MedicationDispense.category</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'Medication dispense  category  codes' (http://hl7.org/fhir/ValueSet/medicationdispense-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#community-hmo)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationDispense</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>MedicationDispense.quantity</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/ucum-common|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationDispense.dosageInstruction[0].site</td><td>Invalid Code</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>MedicationDispense.dosageInstruction[0].route</td><td>Invalid Code</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Route Codes' (http://hl7.org/fhir/ValueSet/route-codes|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>MedicationDispense.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/ucum-common|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationDispense</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-dispense)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>MedicationDispense.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>MedicationDispense.category</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'Medication dispense  category  codes' (http://hl7.org/fhir/ValueSet/medicationdispense-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#community-hmo)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationDispense</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>MedicationDispense.quantity</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/ucum-common|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationDispense.dosageInstruction[0].site</td><td>Invalid Code</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Body Structures' (http://hl7.org/fhir/ValueSet/body-site|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>MedicationDispense.dosageInstruction[0].route</td><td>Invalid Code</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Route Codes' (http://hl7.org/fhir/ValueSet/route-codes|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>MedicationDispense.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/ucum-common|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationDispense</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-dispense)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -2658,7 +2802,7 @@
         "severity" : "warning",
         "code" : "code-invalid",
         "details" : {
-          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)"
+          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Body Structures' (http://hl7.org/fhir/ValueSet/body-site|4.0.1)"
         },
         "expression" : ["MedicationDispense.dosageInstruction[0].site"]
       },
@@ -2741,7 +2885,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>MedicationAdministration.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>MedicationAdministration.category</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'Medication administration  category  codes' (http://hl7.org/fhir/ValueSet/medication-admin-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#inpatient)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationAdministration.dosage.site</td><td>Invalid Code</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>MedicationAdministration.dosage.dose</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/ucum-common|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationAdministration</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-administration)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>MedicationAdministration.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>MedicationAdministration.category</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'Medication administration  category  codes' (http://hl7.org/fhir/ValueSet/medication-admin-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#inpatient)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationAdministration.dosage.site</td><td>Invalid Code</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Body Structures' (http://hl7.org/fhir/ValueSet/body-site|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>MedicationAdministration.dosage.dose</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/ucum-common|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationAdministration</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-administration)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -2815,7 +2959,7 @@
         "severity" : "warning",
         "code" : "code-invalid",
         "details" : {
-          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)"
+          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Body Structures' (http://hl7.org/fhir/ValueSet/body-site|4.0.1)"
         },
         "expression" : ["MedicationAdministration.dosage.site"]
       },
@@ -2874,7 +3018,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>MedicationDispense.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>MedicationDispense.category</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'Medication dispense  category  codes' (http://hl7.org/fhir/ValueSet/medicationdispense-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#community-hmo)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationDispense</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>MedicationDispense.quantity</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/ucum-common|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationDispense.dosageInstruction[0].site</td><td>Invalid Code</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>MedicationDispense.dosageInstruction[0].route</td><td>Invalid Code</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Route Codes' (http://hl7.org/fhir/ValueSet/route-codes|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>MedicationDispense.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/ucum-common|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationDispense</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-dispense)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>MedicationDispense.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>MedicationDispense.category</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'Medication dispense  category  codes' (http://hl7.org/fhir/ValueSet/medicationdispense-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#community-hmo)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationDispense</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>MedicationDispense.quantity</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/ucum-common|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationDispense.dosageInstruction[0].site</td><td>Invalid Code</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Body Structures' (http://hl7.org/fhir/ValueSet/body-site|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>MedicationDispense.dosageInstruction[0].route</td><td>Invalid Code</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Route Codes' (http://hl7.org/fhir/ValueSet/route-codes|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>MedicationDispense.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/ucum-common|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationDispense</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-dispense)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -2996,7 +3140,7 @@
         "severity" : "warning",
         "code" : "code-invalid",
         "details" : {
-          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)"
+          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Body Structures' (http://hl7.org/fhir/ValueSet/body-site|4.0.1)"
         },
         "expression" : ["MedicationDispense.dosageInstruction[0].site"]
       },
@@ -3079,7 +3223,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>MedicationStatement.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationStatement.category</td><td>Not Found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/cs/medication-category' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>MedicationStatement.category</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'Medication usage category codes' (http://hl7.org/fhir/ValueSet/medication-statement-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/medication-category#community-other)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationStatement.category.coding[0]</td><td>Not Found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/cs/medication-category' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationStatement.category</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'ILCore Medication statement Category' (http://fhir.health.gov.il/ValueSet/il-core-medication-statement-category|0.20.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/medication-category#community-other)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationStatement.dosage[0].site</td><td>Invalid Code</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>MedicationStatement.dosage[0].doseAndRate[0].dose.ofType(Quantity)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/ucum-common|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationStatement</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-statement)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>MedicationStatement.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationStatement.category</td><td>Not Found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/cs/medication-category' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>MedicationStatement.category</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'Medication usage category codes' (http://hl7.org/fhir/ValueSet/medication-statement-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/medication-category#community-other)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationStatement.category.coding[0]</td><td>Not Found</td><td>A definition for CodeSystem 'http://fhir.health.gov.il/cs/medication-category' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationStatement.category</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'ILCore Medication statement Category' (http://fhir.health.gov.il/ValueSet/il-core-medication-statement-category|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/medication-category#community-other)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationStatement.dosage[0].site</td><td>Invalid Code</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Body Structures' (http://hl7.org/fhir/ValueSet/body-site|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>MedicationStatement.dosage[0].doseAndRate[0].dose.ofType(Quantity)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/ucum-common|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationStatement</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-statement)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -3197,7 +3341,7 @@
         "severity" : "warning",
         "code" : "code-invalid",
         "details" : {
-          "text" : "None of the codings provided are in the value set 'ILCore Medication statement Category' (http://fhir.health.gov.il/ValueSet/il-core-medication-statement-category|0.20.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/medication-category#community-other)"
+          "text" : "None of the codings provided are in the value set 'ILCore Medication statement Category' (http://fhir.health.gov.il/ValueSet/il-core-medication-statement-category|0.21.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/medication-category#community-other)"
         },
         "expression" : ["MedicationStatement.category"]
       },
@@ -3221,7 +3365,7 @@
         "severity" : "warning",
         "code" : "code-invalid",
         "details" : {
-          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)"
+          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Body Structures' (http://hl7.org/fhir/ValueSet/body-site|4.0.1)"
         },
         "expression" : ["MedicationStatement.dosage[0].site"]
       },
@@ -3280,7 +3424,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>MedicationRequest.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>MedicationRequest.supportingInformation[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-request|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>MedicationRequest.dosageInstruction[0].site</td><td>Invalid Code</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>MedicationRequest</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-request)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>MedicationRequest.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>MedicationRequest.supportingInformation[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-request|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>MedicationRequest.dosageInstruction[0].site</td><td>Invalid Code</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Body Structures' (http://hl7.org/fhir/ValueSet/body-site|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>MedicationRequest</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-request)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -3330,7 +3474,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-request|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-request|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["MedicationRequest.supportingInformation[0]"]
       },
@@ -3354,7 +3498,7 @@
         "severity" : "warning",
         "code" : "code-invalid",
         "details" : {
-          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)"
+          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Body Structures' (http://hl7.org/fhir/ValueSet/body-site|4.0.1)"
         },
         "expression" : ["MedicationRequest.dosageInstruction[0].site"]
       },
@@ -3389,7 +3533,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>MedicationAdministration.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>MedicationAdministration.category</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'Medication administration  category  codes' (http://hl7.org/fhir/ValueSet/medication-admin-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#inpatient)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationAdministration.dosage.site</td><td>Invalid Code</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>MedicationAdministration.dosage.dose</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/ucum-common|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationAdministration</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-administration)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>MedicationAdministration.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>MedicationAdministration.category</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'Medication administration  category  codes' (http://hl7.org/fhir/ValueSet/medication-admin-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#inpatient)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationAdministration.dosage.site</td><td>Invalid Code</td><td>No code provided, and a code should be provided from the value set 'SNOMED CT Body Structures' (http://hl7.org/fhir/ValueSet/body-site|4.0.1)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>MedicationAdministration.dosage.dose</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/ucum-common|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>MedicationAdministration</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication-administration)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -3463,7 +3607,7 @@
         "severity" : "warning",
         "code" : "code-invalid",
         "details" : {
-          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Anatomical Structure for Administration Site Codes' (http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1)"
+          "text" : "No code provided, and a code should be provided from the value set 'SNOMED CT Body Structures' (http://hl7.org/fhir/ValueSet/body-site|4.0.1)"
         },
         "expression" : ["MedicationAdministration.dosage.site"]
       },
@@ -3522,7 +3666,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Observation.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Observation.category[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Error</td><td>Observation</td><td>Structural Issue</td><td>Slice 'Observation.category:il-core': a matching slice is required, but not found (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.4.4). Note that other slices are allowed in addition to this required slice</td><td/><td>InstanceValidator</td></tr><tr><td>Error</td><td>Observation</td><td>Structural Issue</td><td>Observation.referenceRange: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.4.4)</td><td/><td>InstanceValidator</td></tr><tr><td>Error</td><td>Observation.subject</td><td>Structural Issue</td><td>Observation.subject.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.4.4)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Observation</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Observation.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Observation.category[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Error</td><td>Observation</td><td>Structural Issue</td><td>Slice 'Observation.category:il-core': a matching slice is required, but not found (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.5.0). Note that other slices are allowed in addition to this required slice</td><td/><td>InstanceValidator</td></tr><tr><td>Error</td><td>Observation</td><td>Structural Issue</td><td>Observation.referenceRange: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.5.0)</td><td/><td>InstanceValidator</td></tr><tr><td>Error</td><td>Observation.subject</td><td>Structural Issue</td><td>Observation.subject.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.5.0)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Observation</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -3572,7 +3716,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Observation.category[0]"]
       },
@@ -3596,7 +3740,7 @@
         "severity" : "error",
         "code" : "structure",
         "details" : {
-          "text" : "Slice 'Observation.category:il-core': a matching slice is required, but not found (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.4.4). Note that other slices are allowed in addition to this required slice"
+          "text" : "Slice 'Observation.category:il-core': a matching slice is required, but not found (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.5.0). Note that other slices are allowed in addition to this required slice"
         },
         "expression" : ["Observation"]
       },
@@ -3620,7 +3764,7 @@
         "severity" : "error",
         "code" : "structure",
         "details" : {
-          "text" : "Observation.referenceRange: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.4.4)"
+          "text" : "Observation.referenceRange: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.5.0)"
         },
         "expression" : ["Observation"]
       },
@@ -3644,7 +3788,7 @@
         "severity" : "error",
         "code" : "structure",
         "details" : {
-          "text" : "Observation.subject.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.4.4)"
+          "text" : "Observation.subject.identifier: minimum required = 1, but only found 0 (from http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-observation-lab|0.5.0)"
         },
         "expression" : ["Observation.subject"]
       },
@@ -3740,7 +3884,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Observation.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Observation</td><td>Informational Note</td><td>Validate Observation against the Blood pressure systolic and diastolic profile (http://hl7.org/fhir/StructureDefinition/bp) which is required by the FHIR specification because the LOINC code 85354-9 was found</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Observation.extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-bp|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Observation</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-bp)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Observation.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Observation</td><td>Informational Note</td><td>Validate Observation against the Blood pressure systolic and diastolic profile (http://hl7.org/fhir/StructureDefinition/bp) which is required by the FHIR specification because the LOINC code 85354-9 was found</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Observation.extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-bp|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Observation</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-bp)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -3814,7 +3958,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-bp|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-bp|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Observation.extension[0]"]
       },
@@ -3849,7 +3993,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><p>All OK</p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Observation.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Observation.value.ofType(string)</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient-reported-chief-complaint|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><p>All OK</p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Observation.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Observation.value.ofType(string)</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient-reported-chief-complaint|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -3899,7 +4043,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient-reported-chief-complaint|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient-reported-chief-complaint|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Observation.value.ofType(string)"]
       }]
@@ -3910,7 +4054,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><p>All OK</p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Observation.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Observation.value.ofType(string)</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient-reported-chief-complaint|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><p>All OK</p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Observation.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Observation.value.ofType(string)</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient-reported-chief-complaint|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -3960,7 +4104,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient-reported-chief-complaint|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient-reported-chief-complaint|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Observation.value.ofType(string)"]
       }]
@@ -4080,7 +4224,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Organization.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Organization.type[0].coding[0]</td><td>Business Rule Violation</td><td>The concept '10000' is deprecated and its use should be reviewed</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Organization</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-organization)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Organization.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Error</td><td>Organization.type[0].coding[0].display</td><td>Invalid Content</td><td>Wrong Display Name 'אשפוז - פנימית' for http://fhir.health.gov.il/cs/department-type-moh#10000. Valid display is 'פנימית' (for the language(s) 'en')</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Organization.type[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-organization|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Organization.type[0]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'ILHDP Organization Types' (http://hdp.fhir.health.gov.il/ValueSet/il-hdp-organization-types|0.5.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/department-type-moh#10000)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Organization</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-organization)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -4125,14 +4269,62 @@
         },
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
-          "valueCode" : "DEPRECATED_CONCEPT_FOUND"
+          "valueCode" : "Display_Name_for__should_be_one_of__instead_of"
+        }],
+        "severity" : "error",
+        "code" : "invalid",
+        "details" : {
+          "text" : "Wrong Display Name 'אשפוז - פנימית' for http://fhir.health.gov.il/cs/department-type-moh#10000. Valid display is 'פנימית' (for the language(s) 'en')"
+        },
+        "expression" : ["Organization.type[0].coding[0].display"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 79
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Details_for__matching_against_Profile_"
+        }],
+        "severity" : "information",
+        "code" : "informational",
+        "details" : {
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-organization|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
+        },
+        "expression" : ["Organization.type[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 79
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_2_CC"
         }],
         "severity" : "warning",
-        "code" : "business-rule",
+        "code" : "code-invalid",
         "details" : {
-          "text" : "The concept '10000' is deprecated and its use should be reviewed"
+          "text" : "None of the codings provided are in the value set 'ILHDP Organization Types' (http://hdp.fhir.health.gov.il/ValueSet/il-hdp-organization-types|0.5.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/department-type-moh#10000)"
         },
-        "expression" : ["Organization.type[0].coding[0]"]
+        "expression" : ["Organization.type[0]"]
       },
       {
         "extension" : [{
@@ -4226,7 +4418,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Medication.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Medication.code</td><td>Not Found</td><td>A definition for CodeSystem 'http://israeldrugs.health.gov.il' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Medication.form</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'SNOMED CT Form Codes' (http://hl7.org/fhir/ValueSet/medication-form-codes|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#421026006)</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Medication.ingredient[0].item.ofType(CodeableConcept)</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Medication</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Medication.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Medication.code</td><td>Not Found</td><td>A definition for CodeSystem 'http://israeldrugs.health.gov.il' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Medication.form</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'SNOMED CT Form Codes' (http://hl7.org/fhir/ValueSet/medication-form-codes|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#421026006)</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Medication.ingredient[0].item.ofType(CodeableConcept)</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Medication</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -4324,7 +4516,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-medication|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Medication.ingredient[0].item.ofType(CodeableConcept)"]
       },
@@ -4359,7 +4551,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Patient.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Patient.name[0].extension[0].value.ofType(code)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Patient.name[0].extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Patient</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Patient.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Patient.name[0].extension[0].value.ofType(code)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Patient.name[0].extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Patient</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -4433,7 +4625,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Patient.name[0].extension[0]"]
       },
@@ -4468,7 +4660,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Patient.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Patient</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Patient.name[0].extension[0].value.ofType(code)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Patient.name[0].extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Patient</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Patient.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Patient</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Patient.name[0].extension[0].value.ofType(code)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Patient.name[0].extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Patient</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -4566,7 +4758,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Patient.name[0].extension[0]"]
       },
@@ -4601,7 +4793,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Practitioner.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0].value.ofType(code)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Practitioner.qualification[1].identifier[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Practitioner</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Practitioner.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0].value.ofType(code)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Practitioner.qualification[1].identifier[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Practitioner</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -4675,7 +4867,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Practitioner.name[0].extension[0]"]
       },
@@ -4699,7 +4891,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Practitioner.qualification[1].identifier[0]"]
       },
@@ -4734,7 +4926,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Practitioner.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0].value.ofType(code)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Practitioner</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Practitioner.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0].value.ofType(code)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Practitioner</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -4808,7 +5000,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Practitioner.name[0].extension[0]"]
       },
@@ -4843,7 +5035,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Practitioner.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0].value.ofType(code)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Practitioner</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Practitioner.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0].value.ofType(code)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Practitioner</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -4917,7 +5109,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Practitioner.name[0].extension[0]"]
       },
@@ -4952,7 +5144,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Practitioner.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0].value.ofType(code)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Practitioner</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Practitioner.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0].value.ofType(code)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Practitioner</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -5026,7 +5218,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Practitioner.name[0].extension[0]"]
       },
@@ -5061,7 +5253,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Practitioner.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0].value.ofType(code)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Practitioner</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Practitioner.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0].value.ofType(code)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>Practitioner.name[0].extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Practitioner</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -5135,7 +5327,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-practitioner|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Practitioner.name[0].extension[0]"]
       },
@@ -5299,7 +5491,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>RelatedPerson.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>RelatedPerson.relationship[0]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'Patient relationship type' (http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype|4.0.1), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/v3-RoleCode#GUARD)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>RelatedPerson</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>RelatedPerson.name[0].extension[0].value.ofType(code)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>RelatedPerson.name[0].extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-related-person|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>RelatedPerson</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-related-person)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>RelatedPerson.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>RelatedPerson.relationship[0]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'Patient relationship type' (http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype|4.0.1), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/v3-RoleCode#GUARD)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>RelatedPerson</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>RelatedPerson.name[0].extension[0].value.ofType(code)</td><td>Business Rule Violation</td><td>Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1</td><td/><td>TerminologyEngine</td></tr><tr><td>Information</td><td>RelatedPerson.name[0].extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-related-person|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>RelatedPerson</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier: 'Every resource SHALL have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-related-person)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -5421,7 +5613,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-related-person|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-related-person|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["RelatedPerson.name[0].extension[0]"]
       },
@@ -5456,7 +5648,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Patient.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Patient</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Patient.name[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Patient</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Patient.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Patient</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Patient.name[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Patient</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -5530,7 +5722,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Patient.name[0]"]
       },
@@ -5565,7 +5757,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Patient.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Patient</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Patient.name[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Patient</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Patient.meta.security[0]</td><td>Business Rule Violation</td><td>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Patient</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Patient.name[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Patient</td><td>Validation rule failed</td><td>Constraint failed: one-strong-identifier-warning: 'Every resource SHOULD have exactly one (1) strong identifier, as defined by the Israeli HDP law' (defined in http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -5639,7 +5831,7 @@
         "severity" : "information",
         "code" : "informational",
         "details" : {
-          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.4.4 (this may not be a problem, but you should check that it's not intended to match a slice)"
+          "text" : "This element does not match any known slice defined in the profile http://hdp.fhir.health.gov.il/StructureDefinition/il-hdp-patient|0.5.0 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Patient.name[0]"]
       },

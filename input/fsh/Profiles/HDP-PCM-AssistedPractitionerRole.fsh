@@ -79,3 +79,4 @@ Description: "PractitionerRole details provided by healthcare organizations for 
 * notAvailable 0..0
 * availabilityExceptions 0..0
 * endpoint 0..0
+* insert ConformanceMetadata
