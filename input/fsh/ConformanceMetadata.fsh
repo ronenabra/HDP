@@ -1,5 +1,5 @@
 RuleSet: ConformanceMetadata
-* ^version = "0.4.5"
+* ^version = "0.5.0"
 * ^publisher = "Israel Core Team"
 * ^date = "2026-04-19"
 * ^contact[0].telecom[0].system = #email
